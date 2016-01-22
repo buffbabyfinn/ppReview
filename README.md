@@ -8,33 +8,41 @@
 
 _This game page takes a number user input and outputs a series of integers up to that input, replacing multiples of three with 'ping', multiples of 5 with 'pong', and multiples of both with 'pingpong'._
 
-## Setup/Installation Requirements
+## Project Includes:
 
-* _list_
-* _all_
-* _requirements_
+* _index.html_
+* _scripts.js_
+* _specs.js_
+* _styles.css_
+* _jQuery 1.12.0_
+* _Mocha files_
+* _Chai files_
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
-
-## Known Bugs
-
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_{If you run into any issues or bugs with my code, feel free to email me [here]. Or if you'd like to help contribute or refactor my code, contact me at my [GitHub]. }_
 
 ## Technologies Used
 
-* _list_
-* _all_
-* _tech_
-* _used_
+* _HTML_
+* _JavaScript_
+* _CSS_
+* _jQuery_
+* _Apple/Mac_
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_No bootstrap was used in the styling of the webpage._
+
 
 ### License
 
 *This software is licensed under the MIT license.*
 
-Copyright (c) 2016 **By insertContributorsHere**
+Copyright (c) 2016 **By Megan Fayer**
+
+==================================
+
+Contact the author at: [mefayer@gmail.com]
+
+[here]: <mailto:mefayer@gmail.com>
+[GitHub]: <https://github.com/buffbabyfinn>
