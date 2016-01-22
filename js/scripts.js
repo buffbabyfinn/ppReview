@@ -1,38 +1,27 @@
 // Business Logic
 var pingPong = function(num){
 
-
-
-  if (num % 3 === 0 && num % 5 === 0) {
-    return true;
-  } else if (num % 5 === 0) {
-    return true;
-  } else if (num % 3 === 0) {
-    return true;
-  } else {
-    return num;
+  for (var i = 1; i <= num; i ++) {
+    var numArray = [];
+      if (num % 3 === 0 && num % 5 === 0) {
+        numArray.push("pingpong");
+      } else if (num % 5 === 0) {
+        numArray.push("pong");
+      } else if (num % 3 === 0) {
+        numArray.push("ping");
+      } else {
+        numArray.push(i);
+      };
+    console.log(numArray);
+    return numArray
   };
-
 };
-//   For loops and shit go here
-//   If/else like a madman here
-//
-//  return shit like a mo-fo here
-//
-//   ...whatchyu lookin at bitch? Green those specs and git back to work!
-//  Time fo yo Interface Logic, then suckface when it's all green.
-
-
-
-
-
-
-
 
 
 // User Interface Logic
-// $(document).ready(function() {
-//   $("form#IDselector").submit(function(event) {
+$(document).ready(function() {
+  $("form#numForm").submit(function(event) {
+     var num = parseInt($("input#numInput"))
 //     // variables and shit go here, bitch!
 //
 //     // link your muthafuckin' variables to yo bad-ass bidness logic function, Yo!
@@ -44,6 +33,6 @@ var pingPong = function(num){
 //     // Show me some money, hunny, and reveal that hiddin fine shit you got stashed.
 //
 //     // It's all good baby.'
-//     event.preventDefault();
-//   });
-// });
+    event.preventDefault();
+  });
+});
