@@ -1,39 +1,64 @@
 // Business Logic
-var pingPong = function(num){
 
+var fillArray = function(numIn) {
+  var numArray = [];
+  for (var numIn = numIn; numIn > 0; numIn -= 1) {
+    numArray.push(numIn);
+  }
+    return numArray;
+};
 
-    for (var i = 1; i <= num; i ++) {
-      var numArray = [];
-        if (num % 3 === 0 && num % 5 === 0) {
-          numArray.push("pingpong");
-        } else if (num % 5 === 0) {
-          numArray.push("pong");
-        } else if (num % 3 === 0) {
-          numArray.push("ping");
-        } else {
-          numArray.push(i);
-        };
-      console.log(numArray);
-      return numArray
-    };
-  };
+var threeAndFiveDivisor = function(numIn) {
+  if(numIn % 3 === 0 && numIn % 5 === 0) {
+    return "pingpong";
+  }
+};
+
+var threeDivisor = function(numIn) {
+  if (numIn % 3 === 0) {
+    return "ping";
+  }
+};
+
+var fiveDivisor = function(numIn) {
+  if (numIn % 5 === 0) {
+    return "pong";
+  }
+};
+
+var pingPong = function(numIn) {
+  var numArray = fillArray(numIn);
+    numArray.forEach(function(number, index, numArray) {
+      if(threeAndFiveDivisor(number) === 'pingpong') {
+        numArray[index] = 'pingpong';
+      } else if (threeDivisor(number) === 'ping') {
+        numArray[index] = 'ping';
+      } else if (fiveDivisor(number) === 'pong') {
+        numArray[index] = 'pong'
+      }
+    });
+    return numArray;
+};
 
 
 // User Interface Logic
+
 $(document).ready(function() {
+
   $("form#numForm").submit(function(event) {
-     var num = parseInt($("input#numInput"))
-//     // variables and shit go here, bitch!
-//
-//     // link your muthafuckin' variables to yo bad-ass bidness logic function, Yo!
-//
-//     // Make shit happen here...BITCH!
-//
-//     // Muthafuckin' variables connect to your output down here hommie.
-//
-//     // Show me some money, hunny, and reveal that hiddin fine shit you got stashed.
-//
-//     // It's all good baby.'
+    var numIn = parseInt($("input#numInput").val());
+    var ppResult = pingPong(numIn);
+
+    ppResult.forEach(function(number) {
+			$("ul#ppList").prepend("<li>" + number + "</li>");
+		});
     event.preventDefault();
+
+  $(function(){
+    
+        $('.endButton').click(function() {
+          location.reload();
+        });
+  });
   });
 });
