@@ -1,7 +1,19 @@
 // Business Logic
-var pingPong = function(){
-  return false;
-//
+var pingPong = function(num){
+
+
+
+  if (num % 3 === 0 && num % 5 === 0) {
+    return true;
+  } else if (num % 5 === 0) {
+    return true;
+  } else if (num % 3 === 0) {
+    return true;
+  } else {
+    return num;
+  };
+
+};
 //   For loops and shit go here
 //   If/else like a madman here
 //
@@ -9,7 +21,7 @@ var pingPong = function(){
 //
 //   ...whatchyu lookin at bitch? Green those specs and git back to work!
 //  Time fo yo Interface Logic, then suckface when it's all green.
-};
+
 
 
 
