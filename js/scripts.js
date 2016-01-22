@@ -1,6 +1,6 @@
 // Business Logic
-// var helloWorld = function(){
-//   return false;
+var pingPong = function(){
+  return false;
 //
 //   For loops and shit go here
 //   If/else like a madman here
@@ -9,7 +9,7 @@
 //
 //   ...whatchyu lookin at bitch? Green those specs and git back to work!
 //  Time fo yo Interface Logic, then suckface when it's all green.
-// };
+};
 
 
 

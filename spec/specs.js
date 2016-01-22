@@ -1,5 +1,5 @@
-// describe('helloWorld', function(){
-//   it("is going to be false", function(){
-//     expect(helloWorld()).to.equal(false);
-//   });
-// });
+describe('pingPong', function(){
+  it("is going to be false", function(){
+    expect(pingPong()).to.equal(false);
+  });
+});
