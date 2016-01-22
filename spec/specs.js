@@ -7,23 +7,39 @@ describe('pingPong', function(){
 
 
 
-// it("is going to be false", function(){
-//   expect(pingPong()).to.equal(false);
-// });
-// it("returns true when a number is divisible by 15", function(){
-//   expect(pingPong(30)).to.equal(true);
-// });
-// it("returns true when a number is divible by 5", function(){
-//   expect(pingPong(5)).to.equal(true);
-// });
-// it("returns true when a number is divisible by 3", function(){
-//   expect(pingPong(6)).to.equal(true);
-// });
-// it("returns the number input when the number is divisible by neither 3, 5, nor 15", function(){
-//   expect(pingPong(7)).to.equal(7);
-// });
+it("is going to be false", function(){
+  expect(pingPong()).to.equal(false);
+});
+it("returns true when a number is divisible by 15", function(){
+  expect(pingPong(30)).to.equal(true);
+});
+it("returns true when a number is divible by 5", function(){
+  expect(pingPong(5)).to.equal(true);
+});
+it("returns true when a number is divisible by 3", function(){
+  expect(pingPong(6)).to.equal(true);
+});
+it("returns the number input when the number is divisible by neither 3, 5, nor 15", function(){
+  expect(pingPong(7)).to.equal(7);
+});
 
 
+//
+//   for (var i = 1; i <= num; i ++) {
+//     var numArray = [];
+//       if (num % 3 === 0 && num % 5 === 0) {
+//         numArray.push("pingpong");
+//       } else if (num % 5 === 0) {
+//         numArray.push("pong");
+//       } else if (num % 3 === 0) {
+//         numArray.push("ping");
+//       } else {
+//         numArray.push(i);
+//       };
+//     console.log(numArray);
+//     return numArray
+//   };
+// };
 
 // for(var i = 1; i <= 100; i++) {
 //   var output = "";

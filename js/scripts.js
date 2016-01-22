@@ -1,21 +1,22 @@
 // Business Logic
 var pingPong = function(num){
 
-  for (var i = 1; i <= num; i ++) {
-    var numArray = [];
-      if (num % 3 === 0 && num % 5 === 0) {
-        numArray.push("pingpong");
-      } else if (num % 5 === 0) {
-        numArray.push("pong");
-      } else if (num % 3 === 0) {
-        numArray.push("ping");
-      } else {
-        numArray.push(i);
-      };
-    console.log(numArray);
-    return numArray
+
+    for (var i = 1; i <= num; i ++) {
+      var numArray = [];
+        if (num % 3 === 0 && num % 5 === 0) {
+          numArray.push("pingpong");
+        } else if (num % 5 === 0) {
+          numArray.push("pong");
+        } else if (num % 3 === 0) {
+          numArray.push("ping");
+        } else {
+          numArray.push(i);
+        };
+      console.log(numArray);
+      return numArray
+    };
   };
-};
 
 
 // User Interface Logic

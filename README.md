@@ -1,12 +1,12 @@
-# insertApplicationName
+# The Ping Pong Game
 
-#### briefDescription, dateOfCurrentVersion_
+#### This game is a simple counting game that replaces some numbers with the words, 'ping', 'pong', or 'pingpong', Jan 22, 2016.
 
-#### By _**insertContributorNumberOne, insertContributorNumberTwo **_
+#### By _**Megan Fayer**_
 
 ## Description
 
-_insertDetailedDescriptionsOfApplication_
+_This game page takes a number user input and outputs a series of integers up to that input, replacing multiples of three with 'ping', multiples of 5 with 'pong', and multiples of both with 'pingpong'._
 
 ## Setup/Installation Requirements
 
